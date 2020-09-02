@@ -36,10 +36,7 @@ public final class CartesianComplex implements Complex {
     }
 
     @Override
-    public Complex minus(Complex other) {
-        // TODO: will be realized by student
-        return new CartesianComplex(0, 0);
-    }
+    public Complex minus(Complex other) { return new CartesianComplex(re - other.re(), im - other.im()); }
 
     @Override
     public Complex times(Complex other) {
