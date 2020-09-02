@@ -37,16 +37,20 @@ public final class CartesianComplex implements Complex {
 
     @Override
     public Complex minus(Complex other) {
-        return null;
+        // TODO: will be realized by student
+        return new CartesianComplex(0, 0);
     }
 
     @Override
     public Complex times(Complex other) {
-        return null;
+        // TODO: will be realized by student
+        return new CartesianComplex(0, 0);
     }
 
     @Override
     public Complex divide(Complex other) {
-        return null;
+        double otherAbsSqr = Math.pow(other.abs(), 2);
+        Complex inverted = new CartesianComplex(re / otherAbsSqr, -im / otherAbsSqr);
+        return times(inverted);
     }
 }
