@@ -37,7 +37,7 @@ public final class CartesianComplex implements Complex {
 
     @Override
     public Complex minus(Complex other) {
-        return null;
+        return new CartesianComplex(re - other.re(), im - other.im());
     }
 
     @Override
