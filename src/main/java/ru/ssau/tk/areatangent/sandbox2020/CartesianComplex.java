@@ -11,9 +11,7 @@ public final class CartesianComplex implements Complex {
     }
 
     @Override
-    public double re() {
-        return re;
-    }
+    public double re() { return re; }
 
     @Override
     public double im() {
@@ -42,7 +40,7 @@ public final class CartesianComplex implements Complex {
 
     @Override
     public Complex times(Complex other) {
-        return new CartesianComplex(re*other.re()- im*other.im(),im*other.re()+re*other.im());
+        return new CartesianComplex(re * other.re() - im * other.im(), im * other.re() + re * other.im());
     }
 
 
