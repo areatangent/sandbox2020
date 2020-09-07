@@ -11,9 +11,7 @@ public final class CartesianComplex implements Complex {
     }
 
     @Override
-    public double re() {
-        return re;
-    }
+    public double re() { return re; }
 
     @Override
     public double im() {
