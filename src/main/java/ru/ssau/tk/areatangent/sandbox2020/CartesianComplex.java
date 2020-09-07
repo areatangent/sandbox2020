@@ -45,7 +45,6 @@ public final class CartesianComplex implements Complex {
         return new CartesianComplex(re*other.re()- im*other.im(),im*other.re()+re*other.im());
     }
 
-
     @Override
     public Complex divide(Complex other) {
         double otherAbsSqr = Math.pow(other.abs(), 2);

@@ -14,4 +14,11 @@ public class CartesianComplexTest {
         assertEquals(complex.re(), 0, DELTA);
         assertNotEquals(complex.re(), 1, DELTA);
     }
+
+    public void testIm() {
+        Complex complex = new CartesianComplex(0, 5);
+        assertEquals(complex.im(), 5);
+        assertNotEquals(complex.im(), 4);
+    }
+
 }
